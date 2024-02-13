@@ -1,0 +1,132 @@
+*{
+    margin: 0;padding: 0;
+}
+:root{
+    --green: #64ebb6;
+    --blue:#28aadb;
+}
+body,html{
+    height: 100%;
+    font-size: 20px;
+    scroll-behavior: smooth;
+    /* background-color: #D8FAFA; */
+}
+nav{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vmin;
+    position: sticky;
+    top: 0;
+    
+}
+nav .logo{
+    display: flex;
+    gap: 1.5vmin;
+}nav .logo:hover{
+    cursor: pointer;
+}
+nav .logo .logo-text{
+    color: var(--blue);
+}
+nav .logo img{
+    height: 7.5vmin;
+    width: auto;
+}
+nav .navlist{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vmax;
+
+}
+
+nav .navlist li a{
+    text-decoration: none;
+    color: var(--blue);
+}
+ .btn{
+    background:linear-gradient(to right,var(--blue),var(--green));
+    color: white;
+    width: 9vw;
+    height: 5vh;
+    border: none;
+    border-radius: 8px;
+}
+.btn:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+main{
+    display: flex;
+    height: auto;
+    background: linear-gradient(to bottom,#D8FAFA,white);
+    padding: 5vh;
+}
+.left-main{
+    width: 70%;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    
+}
+.left-main .main-text{
+    color: black;
+    max-width: 60%;
+    font-size: 3.5rem;
+}
+.left-main .main-text .special-text{
+    color: var(--blue);
+}
+.main-para{
+    color: black;
+    line-height: normal;
+    max-width: 60%;
+    opacity: 0.8;
+    margin: 3vmin 0;
+}
+
+.left-main .records{
+    display: flex;
+    margin: 5vh 0;
+    gap: 7vw;
+
+}
+.left-main .records .first-rec{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.left-main .records .first-rec .main-rec{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.right-main{
+    
+    width: 30%;
+    background-color: var(--blue);
+    border: none;
+    
+    border-top-left-radius: 15vmax;
+    border-bottom-left-radius: 5vmax;
+}
+.right-main img{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    object-fit: cover;
+
+}
+#companies{
+    height: auto;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+
+}
+#companies img{
+    margin: 5vh auto;
+}
