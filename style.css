@@ -49,8 +49,8 @@ nav .navlist li a{
  .btn{
     background:linear-gradient(to right,var(--blue),var(--green));
     color: white;
-    width: 9vw;
-    height: 5vh;
+    width: 9vmax;
+    height: 5vmin;
     border: none;
     border-radius: 8px;
 }
