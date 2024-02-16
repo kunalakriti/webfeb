@@ -6,7 +6,7 @@
 :root{
     --green: #64ebb6;
     --blue:#28aadb;
-    --marginhero: 2vh 10%;
+    --marginhero: 4vh 10%;
 }
 body,html{
     height: 100%;
@@ -37,6 +37,7 @@ nav .logo .logo-text{
 nav .logo img{
     height: 7.5vmin;
     width: auto;
+    
 }
 nav .navlist{
     list-style-type: none;
@@ -49,6 +50,10 @@ nav .navlist{
 nav .navlist li a{
     text-decoration: none;
     color: var(--blue);
+}
+nav .navlist li a:hover{
+    text-decoration: underline;
+    color: var(--green);
 }
  .btn{
     background:linear-gradient(to right,var(--blue),var(--green));
@@ -159,6 +164,7 @@ main{
 
 #liveconsult{
     margin: 2vh 0;
+    
 
 }
 #liveconsult .bannerchat{
@@ -166,12 +172,16 @@ main{
     width: 85%;
     background-color: var(--blue);
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    border-radius: 0 25% 25% 0;
+    border-radius: 1% 45% 45% 1%;
+    border:1vh solid  #D8FAFA;
+    
 }
 #liveconsult .bannerchat img{
     object-fit: contain;
     height: 20vmin;
+    margin-left: 2vw;
     
 }
 #liveconsult .side-text{
@@ -179,6 +189,7 @@ main{
     flex-direction: column;
     color: white;
     justify-content: center;
+    align-items: center;
 }
 #liveconsult .side-text .header{
     text-transform: uppercase;
@@ -188,6 +199,23 @@ main{
 #liveconsult .side-text .header span{
     color: var(--green);
     font-weight: 800;
+}
+#liveconsult .side-text .desc{
+    max-width: 80%;
+}
+#booking{
+    display: flex;
+    margin: var(--marginhero);
+
+}
+#booking .left-side{
+    width: 50%;
+}
+#booking .right-side{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
 }
 
 
