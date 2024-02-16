@@ -1,9 +1,12 @@
 *{
     margin: 0;padding: 0;
+     font-family: 'Poppins', sans-serif;
 }
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 :root{
     --green: #64ebb6;
     --blue:#28aadb;
+    --marginhero: 2vh 10%;
 }
 body,html{
     height: 100%;
@@ -19,6 +22,7 @@ nav{
     height: 10vmin;
     position: sticky;
     top: 0;
+    z-index: 5;
     
 }
 nav .logo{
@@ -130,3 +134,60 @@ main{
 #companies img{
     margin: 5vh auto;
 }
+#doc{
+    margin: var(--marginhero);
+}
+.consultdoc{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#doc .first-line{
+    color: var(--green);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#doc .header-text{
+    color: var(--blue);
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+#doc .desc{
+    font-size: 0.8rem;
+    margin: 1vh 15%;
+}
+
+#liveconsult{
+    margin: 2vh 0;
+
+}
+#liveconsult .bannerchat{
+    height: 25vmin;
+    width: 85%;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    border-radius: 0 25% 25% 0;
+}
+#liveconsult .bannerchat img{
+    object-fit: contain;
+    height: 20vmin;
+    
+}
+#liveconsult .side-text{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+}
+#liveconsult .side-text .header{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+#liveconsult .side-text .header span{
+    color: var(--green);
+    font-weight: 800;
+}
+
+
