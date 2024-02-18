@@ -320,7 +320,7 @@ main{
     object-fit: cover;
     width: 8vmin;
     height: 8vmin;
-    z-index: 999;
+    z-index: 9999;
 }
 
 /* form section  */
