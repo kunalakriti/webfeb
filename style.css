@@ -6,7 +6,7 @@
 :root{
     --green: #64ebb6;
     --blue:#28aadb;
-    --marginhero: 4vh 10%;
+    --marginhero: 5vh 10%;
 }
 body,html{
     height: 100%;
@@ -20,7 +20,8 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 10vmin;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 5;
     
@@ -82,6 +83,7 @@ main{
     
 }
 .left-main .main-text{
+    margin-top: 10vmin;
     color: black;
     max-width: 60%;
     font-size: 3.5rem;
@@ -114,7 +116,7 @@ main{
 }
 
 .right-main{
-    
+    margin-top: 10vmin;
     width: 30%;
     background-color: var(--blue);
     border: none;
@@ -225,6 +227,22 @@ main{
     gap: 2vmax;
     
 }
+@media only screen and (max-width: 600px) {
+    #booking .left-side .upper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        width: 100%;
+        height: 20%;
+        gap: 2vmax;
+        
+    }
+    #booking .left-side .lower {
+        display: none;
+        
+    }
+}
 #booking .left-side .upper .buttonicons{
     height: 60%;
     width: 40%;
@@ -300,10 +318,272 @@ main{
 }
 .chatbox img{
     object-fit: cover;
-    width: 8.6vmin;
-    height: 8.6vmin;
-    z-index: 9;
+    width: 8vmin;
+    height: 8vmin;
+    z-index: 999;
 }
+
+/* form section  */
+.form {
+    background: rgb(22,19,54, 0.9);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  }
+  .top-area {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  .top-area:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .top-area li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(160, 179, 176, 0.25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+  }
+  .top-area li a:hover {
+    background: #0080ff;
+    color: #ffffff;
+  }
+  .top-area .active a {
+    background: #1da1f2;
+    color: #ffffff;
+  }
+   
+  .tab-content > div:last-child {
+    display: none;
+  }
+   
+  h1 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+    margin: 0 0 40px;
+  }
+  label {
+    position: absolute;
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+    left: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.25s ease;
+    -webkit-backface-visibility: hidden;
+    pointer-events: none;
+    font-size: 22px;
+  }
+  label .req {
+    margin: 2px;
+    color: #1da1f2;
+  }
+  label.active {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+  }
+  label.active .req {
+    opacity: 0;
+  }
+  label.highlight {
+    color: #ffffff;
+  }
+  input, textarea {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: #ffffff;
+    border-radius: 0;
+    transition: border-color .25s ease, box-shadow .25s ease;
+  }
+  input:focus, textarea:focus {
+    outline: 0;
+    border-color: #1da1f2;
+  }
+  textarea {
+    border: 2px solid #a0b3b0;
+    resize: vertical;
+  }
+  .label-field {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .top-row > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+  }
+  .top-row > div:last-child {
+    margin: 0;
+  }
+  .button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #1da1f2;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+  }
+  .button:hover, .button:focus {
+    background: #0080ff;
+  }
+  .button-block {
+    display: block;
+    width: 100%;
+  }
+  .forgot {
+    margin-top: -20px;
+    text-align: right;
+  }
+  @media (max-width: 765px) {
+      label {
+        left: 0;
+      }    }
+    
+      .footer {
+        position: relative;
+        width: 100%;
+        background: #3586ff;
+        min-height: 100px;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20vmin;
+        flex-direction: column;
+      }
+      
+      .social-icon,
+      .menu {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        flex-wrap: wrap;
+      }
+      
+      .social-icon__item,
+      .menu__item {
+        list-style: none;
+      }
+      
+      .social-icon__link {
+        font-size: 2rem;
+        color: #fff;
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+      }
+      .social-icon__link:hover {
+        transform: translateY(-10px);
+      }
+      
+      .menu__link {
+        font-size: 1.2rem;
+        color: #fff;
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+        text-decoration: none;
+        opacity: 0.75;
+        font-weight: 300;
+      }
+      
+      .menu__link:hover {
+        opacity: 1;
+      }
+      
+      .footer p {
+        color: #fff;
+        margin: 15px 0 10px 0;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      
+      .wave {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url("https://i.ibb.co/wQZVxxk/wave.png");
+        background-size: 1000px 100px;
+      }
+      
+      .wave#wave1 {
+        z-index: 20;
+        opacity: 1;
+        bottom: 0;
+        animation: animateWaves 4s linear infinite;
+      }
+      
+      .wave#wave2 {
+        z-index: 19;
+        opacity: 0.5;
+        bottom: 10px;
+        animation: animate 4s linear infinite !important;
+      }
+      
+      .wave#wave3 {
+        z-index: 20;
+        opacity: 0.2;
+        bottom: 15px;
+        animation: animateWaves 3s linear infinite;
+      }
+      
+      .wave#wave4 {
+        z-index: 19;
+        opacity: 0.7;
+        bottom: 20px;
+        animation: animate 3s linear infinite;
+      }
+      
+      @keyframes animateWaves {
+        0% {
+          background-position-x: 1000px;
+        }
+        100% {
+          background-positon-x: 0px;
+        }
+      }
+      
+      @keyframes animate {
+        0% {
+          background-position-x: -1000px;
+        }
+        100% {
+          background-positon-x: 0px;
+        }
+      }
 
 
 
